@@ -27,7 +27,7 @@
 After cloning and install dependencies:
 
 Testing:
-# single-gpu testing\
+#### single-gpu testing\
 python tools/test.py ${CONFIG_FILE} [--checkpoint ${CHECKPOINT_FILE}] [--out ${RESULT_FILE}] [--eval ${EVAL_METRICS}]
 
 example:
@@ -37,26 +37,3 @@ python tools/test.py configs/mot/tracktor/tracktor_faster-rcnn_r50_fpn_4e_mot17-
 Training: 
 python tools/train.py ${CONFIG_FILE} [optional arguments]\\
 
-Dataset:
-setup the data folders as follow:
-
-\
-data\
->|--MOT20\
->>    |--train\
->>>        |--MOT20-01\
->>>>              |--imgs1\
->>>>              |--gt\
->>>>             |--det\
-              |--seginfo.ini\
-        |--MOT20-02\
-        |--MOT20-03\
-        |-...\
-    |--test\
-    |--reid\
-        |--MOT20-01\
-              |--meta\
-              |--imgs\
-        |--MOT20-02\
-        |--MOT20-03\
-    |--annotations
