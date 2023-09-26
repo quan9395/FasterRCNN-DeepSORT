@@ -42,12 +42,12 @@ setup the data folders as follow:
 
 \
 data\
-|--MOT20\
-    |--train\
-        |--MOT20-01\
-              |--imgs1\
-              |--gt\
-              |--det\
+>|--MOT20\
+>>    |--train\
+>>>        |--MOT20-01\
+>>>>              |--imgs1\
+>>>>              |--gt\
+>>>>             |--det\
               |--seginfo.ini\
         |--MOT20-02\
         |--MOT20-03\
