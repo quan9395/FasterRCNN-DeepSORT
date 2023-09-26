@@ -27,14 +27,14 @@
 After cloning and install dependencies:
 
 Testing:
-#### single-gpu testing\
+#### single-gpu testing
 python tools/test.py ${CONFIG_FILE} [--checkpoint ${CHECKPOINT_FILE}] [--out ${RESULT_FILE}] [--eval ${EVAL_METRICS}]
 
 example:
-python tools/test.py configs/mot/tracktor/tracktor_faster-rcnn_r50_fpn_4e_mot17-public-half.py \
+python tools/test.py configs/mot/tracktor/tracktor_faster-rcnn_r50_fpn_4e_mot17-public-half.py
     --eval track
 
 Training: 
-python tools/train.py ${CONFIG_FILE} [optional arguments]\\
+python tools/train.py ${CONFIG_FILE} [optional arguments]
 
-
+For setting up dataset folders, we follow mmtracking's repository folders setting: (https://github.com/open-mmlab/mmtracking/blob/master/docs/en/dataset.md)
