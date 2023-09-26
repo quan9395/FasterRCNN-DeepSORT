@@ -59,4 +59,4 @@ data\
               |--imgs\
         |--MOT20-02\
         |--MOT20-03\
-    |--annotations\
+    |--annotations
