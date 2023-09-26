@@ -23,25 +23,25 @@
 
 !pip install git+https://github.com/JonathonLuiten/TrackEval.git
 
-### Usage:\\
+### Usage:\
 After cloning and install dependencies:
 
-Testing:\\
-# single-gpu testing\\
+Testing:\
+# single-gpu testing\
 python tools/test.py ${CONFIG_FILE} [--checkpoint ${CHECKPOINT_FILE}] [--out ${RESULT_FILE}] [--eval ${EVAL_METRICS}]
 
-example:\\
+example:\
 python tools/test.py configs/mot/tracktor/tracktor_faster-rcnn_r50_fpn_4e_mot17-public-half.py \
     --eval track
 
-Training: \\
+Training: \
 python tools/train.py ${CONFIG_FILE} [optional arguments]\\
 
-Dataset:\\
+Dataset:\
 setup the data folders as follow:
-\\
-\\
-data\\
+\
+\
+data\
 |--MOT20
     |--train
         |--MOT20-01
