@@ -1,5 +1,9 @@
 # FasterRCNN-DeepSORT
-Setup of mmtracking: https://github.com/open-mmlab/mmtracking
+
+
+## This project use mmtracking's repository to perform training and evaluation of Faster R-CNN and DeepSORT tracking algorithm. More infomation can be found at: https://github.com/open-mmlab/mmtracking
+
+###Setup:
 
 !pip install torch==1.10.0+cu111 torchvision==0.11.0+cu111 torchaudio==0.10.0 -f https://download.pytorch.org/whl/torch_stable.html
 
@@ -19,3 +23,40 @@ Setup of mmtracking: https://github.com/open-mmlab/mmtracking
 
 !pip install git+https://github.com/JonathonLuiten/TrackEval.git
 
+### Usage:\\
+After cloning and install dependencies:
+
+Testing:\\
+# single-gpu testing\\
+python tools/test.py ${CONFIG_FILE} [--checkpoint ${CHECKPOINT_FILE}] [--out ${RESULT_FILE}] [--eval ${EVAL_METRICS}]
+
+example:\\
+python tools/test.py configs/mot/tracktor/tracktor_faster-rcnn_r50_fpn_4e_mot17-public-half.py \
+    --eval track
+
+Training: \\
+python tools/train.py ${CONFIG_FILE} [optional arguments]\\
+
+Dataset:\\
+setup the data folders as follow:
+\\
+\\
+data\\
+|--MOT20
+    |--train
+        |--MOT20-01
+              |--imgs1
+              |--gt
+              |--det
+              |--seginfo.ini
+        |--MOT20-02
+        |--MOT20-03
+        |-...
+    |--test
+    |--reid
+        |--MOT20-01
+              |--meta
+              |--imgs
+        |--MOT20-02
+        |--MOT20-03
+    |--annotations
