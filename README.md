@@ -37,3 +37,4 @@ python tools/test.py configs/mot/tracktor/tracktor_faster-rcnn_r50_fpn_4e_mot17-
 Training: 
 python tools/train.py ${CONFIG_FILE} [optional arguments]\\
 
+
